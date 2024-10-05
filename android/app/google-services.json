@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "35876415423",
+    "project_id": "cook-recipes-app-db",
+    "storage_bucket": "cook-recipes-app-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35876415423:android:2b52557c9e66056288a30a",
+        "android_client_info": {
+          "package_name": "com.example.nhom_17"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJxM3LedUIDXO6d36dmwMJlR9tsjo57ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
