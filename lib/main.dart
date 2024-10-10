@@ -14,6 +14,7 @@ Future<void> main() async{
   final WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   //GetX local storage
   await GetStorage.init();
+  //Gemini API
   await dotenv.load(fileName: ".env");
   Gemini.init(
     apiKey: dotenv.env["GEMINI_API_KEY"]!,
