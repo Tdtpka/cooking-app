@@ -7,12 +7,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+<<<<<<< HEAD
+=======
+import 'package:flutter_gemini/flutter_gemini.dart';
+>>>>>>> 0aa85f8 (add AI)
 
 Future<void> main() async{
   //WidgetsBinding
   final WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   //GetX local storage
   await GetStorage.init();
+<<<<<<< HEAD
+=======
+
+  Gemini.init(
+    apiKey: "AIzaSyB3CkxsbXkx_3kR33E8IqUjrwL8gthW-Tg",
+  );
+  runApp(const MyApp());
+>>>>>>> 0aa85f8 (add AI)
   //Splash until other items Load
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   //initialize Firebase & Authentication Repository
