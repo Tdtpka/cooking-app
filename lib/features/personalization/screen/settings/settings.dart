@@ -26,7 +26,7 @@ class SettingsScreen extends StatelessWidget {
         child: Column(
           children: [
             PrimaryHeaderContainer(
-              height: 200,
+              height: 250,
               child: Column(
                 children: [
                   CustomAppBar(

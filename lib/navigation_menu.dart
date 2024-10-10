@@ -24,8 +24,8 @@ class NavigationMenu extends StatelessWidget {
             NavigationDestination(icon: Icon(Iconsax.home), label: "Home"),
             NavigationDestination(icon: Icon(Iconsax.cake), label: "Today Meals"),
             NavigationDestination(icon: Icon(Iconsax.heart), label: "Favourite"),
-            NavigationDestination(icon: Icon(Iconsax.user), label: "Profile"),
             NavigationDestination(icon: Icon(Iconsax.message), label: "Chat with AI"),
+            NavigationDestination(icon: Icon(Iconsax.user), label: "Profile"),
           ]
         ),
       ),
@@ -36,5 +36,5 @@ class NavigationMenu extends StatelessWidget {
 
 class NavigationController extends GetxController{
   final RxInt selectedIndex = 0.obs;
-  final screens = const [HomeScreen(), StoreScreen(),Wishlist(),SettingsScreen(), GeminiPage()];
+  final screens = const [HomeScreen(), StoreScreen(), Wishlist(), GeminiPage(), SettingsScreen()];
 }

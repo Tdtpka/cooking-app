@@ -3,6 +3,7 @@ import 'dart:typed_data';
 import 'package:dash_chat_2/dash_chat_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +22,7 @@ class _GeminiPageState extends State<GeminiPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true, title: const Text("Gemini Chat"),),
+      appBar: AppBar(backgroundColor: Colors.amber.shade400, centerTitle: true, title: Text("Gemini Chat", style: TextStyle(fontSize: 30, color: Colors.white.withOpacity(0.8)),),),
       body: _buildUI(),
     );
     
@@ -32,7 +33,7 @@ class _GeminiPageState extends State<GeminiPage> {
           trailing: [
             IconButton(
               onPressed: _sendMediaMessage,
-              icon: Icon(Icons.image),
+              icon: Icon(Iconsax.image),
             ),
           ]
         ),

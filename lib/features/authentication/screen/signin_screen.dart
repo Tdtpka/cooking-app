@@ -13,6 +13,7 @@ class SigninScreen extends StatelessWidget{
     final controller = Get.put(SigninController());
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Form(
@@ -85,7 +86,6 @@ class SigninScreen extends StatelessWidget{
                   ],
                 ),
               ),
-              
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                 child: Align(

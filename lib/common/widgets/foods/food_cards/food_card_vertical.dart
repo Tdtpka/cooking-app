@@ -40,6 +40,15 @@ class FoodCardVertical extends StatelessWidget {
                   RoundedImage(imageUrl: food.thumbnail, applyImageRadius: true, isNetworkImage: true,),
                   Positioned(
                     top: 0,
+                    child: RoundedContainer(
+                      radius: 10,
+                      backgroundColor: Colors.amber.withOpacity(0.85),
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      child: Text(food.type!, style: Theme.of(context).textTheme.labelLarge!.apply(color: Colors.black),),
+                    ),
+                  ),
+                  Positioned(
+                    top: 0,
                     right: 0,
                     child: Container(
                       decoration: BoxDecoration(
@@ -53,7 +62,7 @@ class FoodCardVertical extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -66,8 +75,8 @@ class FoodCardVertical extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 8),
-                    child: FoodPriceText(price: food.time.toString(),),
+                    padding: const EdgeInsets.only(left: 15, bottom: 5),
+                    child: FoodPriceText(price: food.time.toString(), isLarge: true,),
                   ),
                   GestureDetector(
                     onTap: (){

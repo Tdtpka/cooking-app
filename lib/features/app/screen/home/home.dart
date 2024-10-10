@@ -18,7 +18,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final foodsController = Get.put(FoodController());
-
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -28,9 +27,9 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   const SizedBox(height: 10,),
                   const HomeAppBar(),
-                  const SizedBox(height: 20,),
+                  const SizedBox(height: 15,),
                   SearchContainer(text: "Món ăn hôm nay..", onTap: ()=> Get.to(()=>SearchScreen()),),
-                  const SizedBox(height: 20,),
+                  const SizedBox(height: 12,),
                   const Padding(
                     padding: EdgeInsets.only(left: 25),
                     child: Column(
@@ -40,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                           showActionButton: false,
                           textColor: Colors.white,
                           ),
-                        SizedBox(height: 20,),
+                        SizedBox(height: 10,),
                         HomeTags(),
                       ],
                     ),

@@ -35,16 +35,16 @@ class FoodCardHorizontal extends StatelessWidget {
                     top: 0,
                     child: RoundedContainer(
                       radius: 10,
-                      backgroundColor: Colors.amber,
+                      backgroundColor: Colors.amber.withOpacity(0.85),
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                      child: Text("tag", style: Theme.of(context).textTheme.labelLarge!.apply(color: Colors.black),),
+                      child: Text(food.type!, style: Theme.of(context).textTheme.labelLarge!.apply(color: Colors.black),),
                     ),
                   ),
-                  Positioned(
-                    top: 0,
-                    right: 0,
-                    child: FavouriteIcon(foodId: food.id,)
-                  ) 
+                Positioned(
+                  top: 0,
+                  right: 0,
+                  child: FavouriteIcon(foodId: food.id,)
+                ) 
               ],
             ),
           ),
@@ -58,9 +58,8 @@ class FoodCardHorizontal extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      FoodTitleText(title: food.diet.toString(), smallSize: false,),
+                      FoodTitleText(title: food.name, smallSize: false,),
                       SizedBox(height: 2,),
-                      TypeTitleWithVerifiedIcon(title: food.typeId.toString()),
                     ],
                   ),
                   const Spacer(),
