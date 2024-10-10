@@ -5,7 +5,6 @@ import 'package:nhom_17/common/widgets/foods/favourite_icon/favourite_icon.dart'
 import 'package:nhom_17/common/widgets/images/rounded_image.dart';
 import 'package:nhom_17/common/widgets/texts/food_price_text.dart';
 import 'package:nhom_17/common/widgets/texts/food_title_text.dart';
-import 'package:nhom_17/common/widgets/texts/type_title_with_verify_icon.dart';
 import 'package:nhom_17/features/app/model/food_model.dart';
 
 class FoodCardHorizontal extends StatelessWidget {
