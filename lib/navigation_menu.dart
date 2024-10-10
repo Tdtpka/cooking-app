@@ -4,10 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:nhom_17/features/app/screen/home/home.dart';
 import 'package:nhom_17/features/app/screen/store/store_screen.dart';
 import 'package:nhom_17/features/app/screen/wishlist/wishlist.dart';
-<<<<<<< HEAD
-=======
 import 'package:nhom_17/features/gemini_ai/gemini_page.dart';
->>>>>>> 0aa85f8 (add AI)
 import 'package:nhom_17/features/personalization/screen/settings/settings.dart';
 
 class NavigationMenu extends StatelessWidget {
@@ -28,10 +25,7 @@ class NavigationMenu extends StatelessWidget {
             NavigationDestination(icon: Icon(Iconsax.cake), label: "Today Meals"),
             NavigationDestination(icon: Icon(Iconsax.heart), label: "Favourite"),
             NavigationDestination(icon: Icon(Iconsax.user), label: "Profile"),
-<<<<<<< HEAD
-=======
             NavigationDestination(icon: Icon(Iconsax.message), label: "Chat with AI"),
->>>>>>> 0aa85f8 (add AI)
           ]
         ),
       ),
@@ -42,9 +36,5 @@ class NavigationMenu extends StatelessWidget {
 
 class NavigationController extends GetxController{
   final RxInt selectedIndex = 0.obs;
-<<<<<<< HEAD
-  final screens = const [HomeScreen(), StoreScreen(),Wishlist(),SettingsScreen()];
-=======
   final screens = const [HomeScreen(), StoreScreen(),Wishlist(),SettingsScreen(), GeminiPage()];
->>>>>>> 0aa85f8 (add AI)
 }
