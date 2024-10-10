@@ -8,10 +8,7 @@ list(APPEND FLUTTER_PLUGIN_LIST
   firebase_auth
   firebase_core
   firebase_storage
-<<<<<<< HEAD
-=======
   url_launcher_windows
->>>>>>> 0aa85f8 (add AI)
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST

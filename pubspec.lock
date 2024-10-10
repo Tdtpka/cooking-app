@@ -169,8 +169,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
-<<<<<<< HEAD
-=======
   dash_chat_2:
     dependency: "direct main"
     description:
@@ -195,7 +193,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
->>>>>>> 0aa85f8 (add AI)
   fake_async:
     dependency: transitive
     description:
@@ -345,8 +342,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.4.1"
-<<<<<<< HEAD
-=======
   flutter_gemini:
     dependency: "direct main"
     description:
@@ -355,7 +350,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.5"
->>>>>>> 0aa85f8 (add AI)
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -364,8 +358,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.0"
-<<<<<<< HEAD
-=======
   flutter_markdown:
     dependency: transitive
     description:
@@ -374,7 +366,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.3+2"
->>>>>>> 0aa85f8 (add AI)
   flutter_native_splash:
     dependency: "direct main"
     description:
@@ -383,8 +374,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.4.1"
-<<<<<<< HEAD
-=======
   flutter_parsed_text:
     dependency: transitive
     description:
@@ -393,7 +382,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.1"
->>>>>>> 0aa85f8 (add AI)
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -420,8 +408,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-<<<<<<< HEAD
-=======
   freezed_annotation:
     dependency: transitive
     description:
@@ -430,7 +416,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.4.4"
->>>>>>> 0aa85f8 (add AI)
   get:
     dependency: "direct main"
     description:
@@ -447,8 +432,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
-<<<<<<< HEAD
-=======
   google_generative_ai:
     dependency: "direct main"
     description:
@@ -457,7 +440,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.4.6"
->>>>>>> 0aa85f8 (add AI)
   html:
     dependency: transitive
     description:
@@ -594,8 +576,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.19.0"
-<<<<<<< HEAD
-=======
   json_annotation:
     dependency: transitive
     description:
@@ -604,7 +584,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.9.0"
->>>>>>> 0aa85f8 (add AI)
   leak_tracker:
     dependency: transitive
     description:
@@ -637,8 +616,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.0"
-<<<<<<< HEAD
-=======
   markdown:
     dependency: transitive
     description:
@@ -647,7 +624,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.2.2"
->>>>>>> 0aa85f8 (add AI)
   matcher:
     dependency: transitive
     description:
@@ -893,8 +869,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.2"
-<<<<<<< HEAD
-=======
   url_launcher:
     dependency: transitive
     description:
@@ -959,7 +933,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.2"
->>>>>>> 0aa85f8 (add AI)
   uuid:
     dependency: transitive
     description:
@@ -976,8 +949,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
-<<<<<<< HEAD
-=======
   video_player:
     dependency: transitive
     description:
@@ -1018,7 +989,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.2"
->>>>>>> 0aa85f8 (add AI)
   vm_service:
     dependency: "direct main"
     description:

@@ -4,6 +4,7 @@ import 'package:dash_chat_2/dash_chat_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:get/get.dart';
 
 class GeminiPage extends StatefulWidget {
   const GeminiPage({super.key});
@@ -70,7 +71,7 @@ class _GeminiPageState extends State<GeminiPage> {
         });
 
       }catch(e){
-        print(e.toString());
+        Get.snackbar("Oops", e.toString());
       }
     }
     void _sendMediaMessage() async{
