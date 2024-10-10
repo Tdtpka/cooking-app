@@ -8,14 +8,15 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
-
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 Future<void> main() async{
   //WidgetsBinding
   final WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   //GetX local storage
   await GetStorage.init();
+  await dotenv.load(fileName: ".env");
   Gemini.init(
-    apiKey: "AIzaSyB3CkxsbXkx_3kR33E8IqUjrwL8gthW-Tg",
+    apiKey: dotenv.env["GEMINI_API_KEY"]!,
   );
   runApp(const MyApp());
   //Splash until other items Load
