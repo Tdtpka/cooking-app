@@ -20,7 +20,7 @@ class GroceryController extends GetxController{
   }
 
   Future<void> initGrocery()async{
-    final snapshot = await _db.collection(userId).doc().get();
+    final snapshot = await _db.collection("grocery_list").doc(userId).get();
     final json = snapshot.data();
     if(json != null){
       groceryList.assignAll(json.map((key, value) => MapEntry(key, value as Map<String, dynamic>)));
