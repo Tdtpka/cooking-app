@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:nhom_17/features/app/screen/home/home.dart';
-import 'package:nhom_17/features/app/screen/store/store_screen.dart';
+import 'package:nhom_17/features/app/screen/store/today_screen.dart';
 import 'package:nhom_17/features/app/screen/wishlist/wishlist.dart';
 import 'package:nhom_17/features/gemini_ai/gemini_page.dart';
 import 'package:nhom_17/features/personalization/screen/settings/settings.dart';
@@ -35,6 +35,7 @@ class NavigationMenu extends StatelessWidget {
 }
 
 class NavigationController extends GetxController{
+  static NavigationController get instance => Get.find();
   final RxInt selectedIndex = 0.obs;
-  final screens = const [HomeScreen(), StoreScreen(), Wishlist(), GeminiPage(), SettingsScreen()];
+  final screens = const [HomeScreen(), TodayScreen(), Wishlist(), GeminiPage(), SettingsScreen()];
 }

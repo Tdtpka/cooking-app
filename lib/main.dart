@@ -9,7 +9,6 @@ import 'package:get/get.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-
 Future<void> main() async{
 
   //WidgetsBinding

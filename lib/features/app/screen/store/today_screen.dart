@@ -16,8 +16,8 @@ import 'package:nhom_17/features/app/screen/store/widgets/tag_tab.dart';
 import 'package:nhom_17/features/app/screen/type/all_types.dart';
 import 'package:nhom_17/features/app/screen/type/type_foods.dart';
 
-class StoreScreen extends StatelessWidget {
-  const StoreScreen({super.key});
+class TodayScreen extends StatelessWidget {
+  const TodayScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

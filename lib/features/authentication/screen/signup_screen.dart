@@ -15,6 +15,7 @@ class _SignupScreenState extends State<SignupScreen>{
     final controller = Get.put(SignupController());
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SizedBox(

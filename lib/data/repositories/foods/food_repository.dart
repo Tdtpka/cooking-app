@@ -7,7 +7,6 @@ import 'package:nhom_17/features/app/model/type_model.dart';
 class FoodRepository extends GetxController{
   static FoodRepository get instance => Get.find();
   final FirebaseFirestore _db = FirebaseFirestore.instance;
-
   Future<List<FoodModel>> getFeaturedFoods() async{
     try{
       final snapshot = await _db.collection("foods").where("isFeatured", isEqualTo: true).limit(4).get();
