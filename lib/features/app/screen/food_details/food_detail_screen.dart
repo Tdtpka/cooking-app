@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:nhom_17/common/widgets/icons/circular_icon.dart';
 import 'package:nhom_17/common/widgets/texts/section_heading.dart';
-import 'package:nhom_17/features/app/controller/grocery/grocery_list_controller.dart';
+import 'package:nhom_17/features/app/controller/recipe/recipe_controller.dart';
 import 'package:nhom_17/features/app/model/food_model.dart';
 import 'package:nhom_17/features/app/screen/cooking/cooking_screen.dart';
 import 'package:nhom_17/features/app/screen/food_details/widgets/food_attributes.dart';
@@ -22,7 +22,7 @@ class ProductDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final diet = 1.obs;
-    final controller = GroceryController.instance;
+    final controller = RecipeController.instance;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(

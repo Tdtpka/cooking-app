@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nhom_17/common/widgets/appbar/appbar.dart';
 import 'package:nhom_17/common/widgets/foods/grocery/list_menu_icon.dart';
-import 'package:nhom_17/features/app/screen/grocery/grocery_screen.dart';
+import 'package:nhom_17/features/app/screen/recipe/recipe_screen.dart';
 import 'package:nhom_17/navigation_menu.dart';
 
 class HomeAppBar extends StatelessWidget {
@@ -25,9 +25,9 @@ class HomeAppBar extends StatelessWidget {
       ),
       actions: [
         CartCounterIcon(
-          onPressed: ()=>Get.to(()=> GroceryScreen()),
+          onPressed: ()=>Get.to(()=> RecipeScreen()),
           iconColor: Colors.orange.shade900,
-          hoverColor: Colors.white.withOpacity(0.5),
+          hoverColor: Colors.white.withValues(alpha: 0.5),
         )
       ],
     );

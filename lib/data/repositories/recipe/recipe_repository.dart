@@ -2,9 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 import 'package:nhom_17/features/app/model/recipe_model.dart';
 
-class GroceryRepository extends GetxController{
+class RecipeRepository extends GetxController{
 
-  static GroceryRepository get instance => Get.find();
+  static RecipeRepository get instance => Get.find();
 
   final _db = FirebaseFirestore.instance;
   

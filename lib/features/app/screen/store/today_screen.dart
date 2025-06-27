@@ -10,7 +10,7 @@ import 'package:nhom_17/common/widgets/shimmers/type_shimmer_effect.dart';
 import 'package:nhom_17/common/widgets/texts/section_heading.dart';
 import 'package:nhom_17/features/app/controller/tag_controller.dart';
 import 'package:nhom_17/features/app/controller/type_controller.dart';
-import 'package:nhom_17/features/app/screen/grocery/grocery_screen.dart';
+import 'package:nhom_17/features/app/screen/recipe/recipe_screen.dart';
 import 'package:nhom_17/features/app/screen/search/search_screen.dart';
 import 'package:nhom_17/features/app/screen/store/widgets/tag_tab.dart';
 import 'package:nhom_17/features/app/screen/type/all_types.dart';
@@ -29,7 +29,7 @@ class TodayScreen extends StatelessWidget {
         appBar: CustomAppBar(
           title: Text("Today food", style: Theme.of(context).textTheme.headlineMedium,),
           actions: [
-            CartCounterIcon(iconColor: Colors.orange, onPressed: ()=>Get.to(()=>const GroceryScreen()))
+            CartCounterIcon(iconColor: Colors.orange, onPressed: ()=>Get.to(()=>const RecipeScreen()))
           ],
         ),
         body: NestedScrollView(

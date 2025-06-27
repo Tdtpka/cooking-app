@@ -52,6 +52,7 @@ class UserController extends GetxController{
   void deleteUserAccount() async{
     try{
       await AuthenticationRepository.instance.deleteAccount();
+      await userRepository.removeUserRecord(AuthenticationRepository.instance.authUser!.uid);
       Get.offAll(() => const SigninScreen());
     }catch(e){
       throw e.toString();

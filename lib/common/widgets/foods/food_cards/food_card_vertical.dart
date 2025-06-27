@@ -7,7 +7,7 @@ import 'package:nhom_17/common/widgets/foods/favourite_icon/favourite_icon.dart'
 import 'package:nhom_17/common/widgets/images/rounded_image.dart';
 import 'package:nhom_17/common/widgets/texts/food_price_text.dart';
 import 'package:nhom_17/common/widgets/texts/food_title_text.dart';
-import 'package:nhom_17/features/app/controller/grocery/grocery_list_controller.dart';
+import 'package:nhom_17/features/app/controller/recipe/recipe_controller.dart';
 import 'package:nhom_17/features/app/model/food_model.dart';
 import 'package:nhom_17/features/app/screen/food_details/food_detail_screen.dart';
 
@@ -18,7 +18,7 @@ class FoodCardVertical extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = GroceryController.instance;
+    final controller = RecipeController.instance;
     return GestureDetector(
       onTap: () => Get.to(()=> ProductDetailScreen(food: food,)),
       child: Container(

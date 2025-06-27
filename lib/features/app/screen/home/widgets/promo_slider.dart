@@ -31,7 +31,7 @@ class PromoSlider extends StatelessWidget {
                     items: controller.banners.map((banner)=> RoundedImage(
                       imageUrl: banner.imageUrl,
                       isNetworkImage: true,
-                      onPressed: () =>Get.toNamed(banner.targetScreen),
+                      onPressed: (){},
                     )).toList(),
                   ),
                   const SizedBox(height: 8,),

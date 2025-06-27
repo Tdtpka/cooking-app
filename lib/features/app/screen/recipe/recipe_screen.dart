@@ -3,16 +3,16 @@ import 'package:get/get.dart';
 import 'package:nhom_17/common/widgets/appbar/appbar.dart';
 import 'package:nhom_17/common/widgets/foods/recipe/recipe_item.dart';
 import 'package:nhom_17/common/widgets/shimmers/vertical_foods_shimmer.dart';
-import 'package:nhom_17/features/app/controller/grocery/grocery_list_controller.dart';
+import 'package:nhom_17/features/app/controller/recipe/recipe_controller.dart';
 import 'package:nhom_17/navigation_menu.dart';
 
-class GroceryScreen extends StatelessWidget {
-  const GroceryScreen({super.key});
+class RecipeScreen extends StatelessWidget {
+  const RecipeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
 
-    final controller = Get.put(GroceryController());
+    final controller = Get.put(RecipeController());
     final RxBool clear = false.obs;
     return Obx(()=>
       Scaffold(
@@ -59,7 +59,7 @@ class GroceryScreen extends StatelessWidget {
                           final quantity = item!["quantity"];
                           final RxBool isBought = false.obs;
                           isBought.value = item["isBought"];
-                          return GroceryItem(item: list[index], quantity: quantity, isBought: isBought,);
+                          return RecipeItem(item: list[index], quantity: quantity, isBought: isBought,);
                         }
                       ),
                     );

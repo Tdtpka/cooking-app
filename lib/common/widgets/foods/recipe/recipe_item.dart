@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:nhom_17/common/widgets/images/rounded_image.dart';
 import 'package:nhom_17/common/widgets/texts/food_price_text.dart';
 import 'package:nhom_17/common/widgets/texts/food_title_text.dart';
-import 'package:nhom_17/features/app/controller/grocery/grocery_list_controller.dart';
+import 'package:nhom_17/features/app/controller/recipe/recipe_controller.dart';
 import 'package:nhom_17/features/app/model/recipe_model.dart';
 
-class GroceryItem extends StatelessWidget {
-  const GroceryItem({
-    super.key, required this.item, required this.quantity, required this.isBought,
+class RecipeItem extends StatelessWidget {
+  const RecipeItem({
+    super.key,
+    required this.item,
+    required this.quantity,
+    required this.isBought,
   });
   final RecipeModel item;
   final int quantity;
@@ -16,7 +20,7 @@ class GroceryItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = GroceryController.instance;
+    final controller = RecipeController.instance;
     return Row(
       children: [
         RoundedImage(
@@ -28,36 +32,58 @@ class GroceryItem extends StatelessWidget {
           backgroundColor: Colors.white,
           borderRadius: 30,
         ),
-        const SizedBox(width: 16,),
+        const SizedBox(
+          width: 16,
+        ),
         Expanded(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Obx(()=> Flexible(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        FoodTitleText(title: item.name, maxLines: 1, lineThrough: isBought.value, smallSize: true,),
-                        FoodPriceText(price: quantity.toString(), currencySign: item.unit, lineThrough: isBought.value, isLarge: false,),
-                      ],
-                    ),
-                      Checkbox(
-                        value: isBought.value,
-                        onChanged: (val){
-                          isBought.value = val!;
-                          controller.clickBought(item.id, isBought.value);
-                        }
-                      )
-                    
-                  ],
-                ))
-              
-              ),
-              
+              Obx(() => Flexible(
+                      child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        flex: 7,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            FoodTitleText(
+                              title: item.name,
+                              maxLines: 1,
+                              lineThrough: isBought.value,
+                              smallSize: true,
+                            ),
+                            FoodPriceText(
+                              price: quantity.toString(),
+                              currencySign: item.unit,
+                              lineThrough: isBought.value,
+                              isLarge: false,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Checkbox(
+                            value: isBought.value,
+                            onChanged: (val) {
+                              isBought.value = val!;
+                              controller.clickBought(item.id, isBought.value);
+                            }),
+                      ),
+                      Expanded(
+                          child: GestureDetector(
+                            onTap: (){
+                              controller.removeRecipe(item.id);
+                            },
+                        child: Icon(
+                          Iconsax.trash,
+                          color: Colors.red,
+                        ),
+                      ))
+                    ],
+                  ))),
             ],
           ),
         )

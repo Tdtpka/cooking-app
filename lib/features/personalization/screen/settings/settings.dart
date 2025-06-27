@@ -7,7 +7,7 @@ import 'package:nhom_17/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:nhom_17/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:nhom_17/common/widgets/shimmers/shimmer_effect.dart';
 import 'package:nhom_17/common/widgets/texts/section_heading.dart';
-import 'package:nhom_17/features/app/screen/grocery/grocery_screen.dart';
+import 'package:nhom_17/features/app/screen/recipe/recipe_screen.dart';
 import 'package:nhom_17/features/authentication/controller/signout_controller.dart';
 import 'package:nhom_17/features/personalization/controller/user_controller.dart';
 import 'package:nhom_17/features/personalization/screen/profile/profile_screen.dart';
@@ -65,7 +65,7 @@ class SettingsScreen extends StatelessWidget {
                     onTap: ()=> navController.selectedIndex.value = 1,
                     child: const SettingsMenuTile(icon: Iconsax.cake, title: "Today Food", subTitle: "A page of popular foods")),
                   GestureDetector(
-                    onTap: ()=> Get.to(()=> GroceryScreen()),
+                    onTap: ()=> Get.to(()=> RecipeScreen()),
                     child: const SettingsMenuTile(icon: Iconsax.shopping_bag, title: "My Grocery List", subTitle: "A list of recipes")),
                   SizedBox(
                     width: double.infinity,

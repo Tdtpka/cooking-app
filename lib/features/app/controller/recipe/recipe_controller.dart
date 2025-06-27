@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import 'package:nhom_17/data/repositories/grocery/grocery_repository.dart';
+import 'package:nhom_17/data/repositories/recipe/recipe_repository.dart';
 import 'package:nhom_17/features/app/model/recipe_model.dart';
 
-class GroceryController extends GetxController{
-  static GroceryController get instance => Get.find();
-  final _groceryRepository = Get.put(GroceryRepository());
+class RecipeController extends GetxController{
+  static RecipeController get instance => Get.find();
+  final _groceryRepository = Get.put(RecipeRepository());
 
   final _db = FirebaseFirestore.instance;
   final userId = FirebaseAuth.instance.currentUser!.uid;

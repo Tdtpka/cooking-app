@@ -32,9 +32,18 @@ class SignupController  extends GetxController{
       await userRepository.saveUserRecord(newUser);
       await FirebaseAuth.instance.currentUser?.reload();
       AuthenticationRepository.instance.screenRedirect();
+      email.clear();
+      password.clear();
+      userName.clear();
+      name.clear();
+      phoneNumber.clear();
       Get.snackbar("Sign in: ", "Sign in success");
     }catch(e){
-      Get.snackbar("Error!", e.toString());
+      if(password.text.length<6){
+        Get.snackbar("Error!", "Password must least 6 characters");
+      }else if(await UserRepository.instance.findUser(email.text)){
+        Get.snackbar("Error!", "Email was used");
+      }
     }
   }
   

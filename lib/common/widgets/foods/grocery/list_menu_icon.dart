@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:nhom_17/features/app/controller/grocery/grocery_list_controller.dart';
-import 'package:nhom_17/features/app/screen/grocery/grocery_screen.dart';
+import 'package:nhom_17/features/app/controller/recipe/recipe_controller.dart';
+import 'package:nhom_17/features/app/screen/recipe/recipe_screen.dart';
 
 class CartCounterIcon extends StatelessWidget {
   const CartCounterIcon({
@@ -17,11 +17,11 @@ class CartCounterIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(GroceryController());
+    final controller = Get.put(RecipeController());
     return Stack(
       children: [
         IconButton(
-          onPressed: () => Get.to(()=> const GroceryScreen()),
+          onPressed: () => Get.to(()=> const RecipeScreen()),
           icon: Icon(Iconsax.shopping_bag, color: iconColor,),
           hoverColor: hoverColor,
         ),

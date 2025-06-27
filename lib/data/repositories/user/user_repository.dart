@@ -65,4 +65,13 @@ class UserRepository extends GetxController{
       throw e.toString();
     }
   }
+  Future<bool> findUser(String email)async{
+    try{
+      final querySnapshot = await _db.collection("users").where("email", isEqualTo: email).get();
+      if(querySnapshot.docs.isNotEmpty) return true;
+      return false;
+    }catch(e){
+      throw e.toString();
+    }
+  }
 }

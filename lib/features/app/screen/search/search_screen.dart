@@ -18,7 +18,7 @@ class SearchScreen extends StatelessWidget {
           decoration: InputDecoration(hintText: 'Tìm kiếm'),
         ),
       ),
-      body: Obx(() => ListView.builder(
+      body: Obx(() => controller.filteredFoods.isEmpty?Center(child: Text("Không tìm thấy món ăn")): ListView.builder(
         itemCount: controller.filteredFoods.length,
         itemBuilder: (context, index) {
           final food = controller.filteredFoods[index];

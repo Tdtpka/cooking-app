@@ -4,7 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:nhom_17/common/widgets/images/circular_image.dart';
 import 'package:nhom_17/common/widgets/shimmers/horizontal_foods_shimmer.dart';
 import 'package:nhom_17/features/app/controller/food/food_controller.dart';
-import 'package:nhom_17/features/app/controller/grocery/grocery_list_controller.dart';
+import 'package:nhom_17/features/app/controller/recipe/recipe_controller.dart';
 import 'package:nhom_17/features/app/model/food_model.dart';
 import 'package:nhom_17/features/app/screen/food_details/widgets/recipe_tile.dart';
 
@@ -17,7 +17,7 @@ class FoodRecipe extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     final controller = FoodController.instance;
-    final groceryController = GroceryController.instance;
+    final groceryController = RecipeController.instance;
     return SizedBox(
       child: Padding(
         padding: EdgeInsets.only(top: 20),
